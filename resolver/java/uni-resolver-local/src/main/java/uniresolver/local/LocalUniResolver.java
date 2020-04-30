@@ -229,7 +229,7 @@ public class LocalUniResolver implements UniResolver {
 			if (log.isDebugEnabled()) log.debug("Attemping to resolve " + resolveIdentifier + " with driver " + driver.getValue().getClass());
 			driverResolveResult = driver.getValue().resolve(resolveIdentifier);
 
-			if (driverResolveResult != null && driverResolveResult.getDidDocument() != null && driverResolveResult.getDidDocument().getJsonLdObject().isEmpty()) {
+			if (driverResolveResult != null && driverResolveResult.getDidDocument() != null) {
 
 				driverResolveResult.setDidDocument((DIDDocument) null);
 			}

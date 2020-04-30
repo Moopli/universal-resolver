@@ -129,6 +129,9 @@
 			"image": "docknetwork/dock-did-driver",
 			"tag": "latest",
 			"testIdentifiers": [ "did:dock:5FXqofpV7dsuki925U1dSzDvBuQbaci5yWTQGVWRQ7bdQP5p" ]
+		}, {
+			"pattern": "^(did:trustbloc:testnet.trustbloc.local:.+)$",
+			"url": "http://trustbloc.did.method.example.com:8070/resolveDID?did=$1"
 		}
 	]
 }
